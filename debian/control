@@ -1,0 +1,35 @@
+Source: contrail-third-party
+Section: misc
+Priority: optional
+Maintainer: Overcast Pkgbuild Service <pkgbuild@overcastcloud.com>
+Build-Depends: debhelper (>= 9.0.0),
+               autoconf,
+               automake,
+               bison,
+               flex,
+               libcurl4-openssl-dev,
+               libexpat-dev,
+               libgettextpo0,
+               libprotobuf-dev,
+               libtool,
+               libxml2-utils,
+               make,
+               protobuf-compiler,
+               python-all (>= 2.7),
+               python-dev,
+               python-lxml,
+               python-setuptools,
+               python-sphinx,
+               ruby-ronn,
+               scons (>= 2.1.0),
+               unzip,
+               wget
+Standards-Version: 3.9.4
+
+
+Package: contrail-third-party
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Automatically built package
+ This package was built by Overcast package building service using
+ code from the testing
